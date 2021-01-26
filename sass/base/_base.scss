@@ -1,0 +1,28 @@
+//  partial scss file
+
+/* Universal selector. Selects each and every element on page
+and apply declarations here to them */
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+
+/* root font size set for conversion to rem. 1rem == 10px */
+
+html {
+    //  defines what 1rem is
+    font-size: 62.5%;
+}
+
+
+/* site wide font settings */
+
+body {
+    /* changes box model so borders and padding are no longer added */
+    box-sizing: border-box;
+}

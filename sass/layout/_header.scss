@@ -1,0 +1,31 @@
+/* header section */
+
+.header {
+    /* 95% of viewport height */
+    height: 95vh;
+    /* add image and color gradient */
+    background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url(../images/hero.jpg);
+    background-size: cover;
+    background-position: top;
+    /* shapes picture into polygon */
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+    position: relative;
+    &__logo-box {
+        /* position is relative to parent class .header */
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+    }
+    &__logo {
+        height: 3.5rem;
+    }
+    /* center position box */
+    &__text-box {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}

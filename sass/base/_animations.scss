@@ -1,0 +1,50 @@
+/* animation */
+
+@keyframes moveInLeft {
+    /* starts invisible */
+    0% {
+        opacity: 0;
+        /* animation starts from left */
+        transform: translateX(-10rem);
+    }
+    /* Causes a 'bounce back'
+    80% {
+        transform: translateX(20px);
+    } */
+    /* complete transition */
+    100% {
+        opacity: 1;
+        /* completed state */
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    /* starts invisible */
+    0% {
+        opacity: 0;
+        /* animation starts from left */
+        transform: translateX(10rem);
+    }
+    /* complete transition */
+    100% {
+        opacity: 1;
+        /* completed state */
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInBottom {
+    /* starts invisible */
+    0% {
+        opacity: 0;
+        /* animation starts from left */
+        transform: translateY(3rem);
+    }
+    /* complete transition */
+    100% {
+        opacity: 1;
+        /* completed state */
+        transform: translate(0);
+    }
+}
